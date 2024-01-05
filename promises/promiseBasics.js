@@ -1,5 +1,4 @@
 const axios = require("axios");
-const utils = require("utils");
 
 let promise = new Promise((resolve, reject) => {
     axios.get(`https://jsonplaceholder.typicode.com/todos/-1`)

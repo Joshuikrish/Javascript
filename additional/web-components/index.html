@@ -1,0 +1,17 @@
+<!doctype html>
+<body>
+<script>
+customElements.define('show-hello', class extends HTMLElement {
+  connectedCallback() {
+    const shadow = this.attachShadow({mode: 'open'});
+    
+    shadow.innerHTML = `<p style="display:none">
+        23456dsfsdfkjsdlkfj456
+    </p>`;
+  }
+});
+</script>
+<h1>Can you find the flag</h1>
+<input type="text" name="" id="">
+<show-hello ></show-hello>
+</body>
